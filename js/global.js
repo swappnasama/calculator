@@ -9,7 +9,6 @@ const output=function (exp) {
 }
 
 const calculate=function() {
-  let result = display.value;
-  result = eval(result);
+  let result = eval(display.value);
   display.value = result;
 }
