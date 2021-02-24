@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/global.css">
+  <script src="js/global.js" defer></script>
+</head>
+<body>
+
+  <form name="calculator" id="calculator">
+    <input type="text" id="display" name="display" placeholder="0" disabled readonly>
+    
+    <input type="button" id="percent" class="operator" value="%" onclick="output('%')">
+    <input type="button" id="one"class="numbers"  value="1" onclick="output('1')">
+    <input type="button" id="two" class="numbers" value="2" onclick="output('2')">
+    <input type="button" id="three" class="numbers" value="3" onclick="output('3')">
+
+    <input type="button" id="div" class="operator" value="÷" onclick="output('/')">
+
+    <input type="button" id="four" class="numbers" value="4" onclick="output('4')">
+    <input type="button" id="five" class="numbers" value="5" onclick="output('5')">
+    <input type="button" id="six" class="numbers" value="6" onclick="output('6')"> 
+
+    <input type="button" id="mult" class="operator" value="×" onclick="output('*')">
+
+    <input type="button" id="seven" class="numbers" value="7" onclick="output('7')">
+    <input type="button" id="eight" class="numbers" value="8" onclick="output('8')">
+    <input type="button" id="nine" class="numbers" value="9" onclick="output('9')"> 
+
+    <input type="button" id="sub" class="operator" value="–" onclick="output('-')">
+
+    <input type="button" id="decimal" class="numbers" value="." onclick="output('.')">
+    <input type="button" id="zero" class="numbers" value="0" onclick="output('0')">
+    <button type="button" id="clear" class="operator" value=" " onclick="clearOutput()">clear</button>
+
+    <input type="button" id="add" class="operator" value="+" onclick="output('+')">
+    
+    <button type="button" id="result" class="operator" onclick="calculate()">=</button>
+    
+  </form>
+      
+ 
+</body>
+</html>

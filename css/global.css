@@ -1,0 +1,98 @@
+
+#display{
+  grid-area: display;
+  background-color: none;
+  color: white;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 24px;
+  text-align: right;
+}
+#one{
+  grid-area: one;
+}
+#two{
+  grid-area: two;
+}
+#three{
+  grid-area: three;
+}
+#four{
+  grid-area: four;
+}
+#five{
+  grid-area: five;  
+}
+#six{
+  grid-area: six;
+}
+#seven{
+  grid-area: seven;
+}
+#eight{
+  grid-area: eight;
+}
+#nine{
+  grid-area: nine;
+}
+#zero{
+  grid-area: zero;
+}
+#div{
+  grid-area: division;
+}
+#mult{
+  grid-area: mult;
+}
+#sub{
+  grid-area: substraction;
+}
+#add{
+  grid-area: addition;
+}
+#decimal{
+  grid-area: period;
+}
+#clear{
+  grid-area: clear;
+}
+#result{
+  grid-area: equal;
+}
+#percent{
+  grid-area: percent;
+}
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "display display display display"
+    ". . clear percent "
+    "one two three division "
+    "four five six mult"
+    "seven eight nine substraction  "
+    "zero period addition equal   ";
+  background-color: black;
+  width:325px;
+  height:500px;
+  margin: 0 auto;
+  grid-gap: 10px;
+  padding: 10px;
+  border-radius:10px;
+}
+.operator{
+  border: none;
+  background-color: rgb(243, 154, 19);
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+}
+.numbers{
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
