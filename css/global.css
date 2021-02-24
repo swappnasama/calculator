@@ -8,6 +8,7 @@
   border: none;
   font-size: 24px;
   text-align: right;
+  border-bottom: 2px solid;
 }
 #one{
   grid-area: one;
